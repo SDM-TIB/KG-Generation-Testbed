@@ -16,4 +16,9 @@ WORKDIR  /KG-Testbed
 
 COPY . /KG-Testbed
 
+RUN cd /KG-Testbed/tools && \
+    wget https://github.com/RMLio/rmlmapper-java/releases/download/v4.3.3/rmlmapper-4.3.3-r92.jar && \
+    mv rmlmapper-4.3.3-r92.jar rmlmapper.jar && \
+    cd ..
+
 CMD ["/KG-Testbed/reproduce.sh"]
