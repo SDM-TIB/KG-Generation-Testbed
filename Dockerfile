@@ -20,5 +20,11 @@ RUN cd /KG-Testbed/tools && \
     wget https://github.com/RMLio/rmlmapper-java/releases/download/v4.3.3/rmlmapper-4.3.3-r92.jar && \
     mv rmlmapper-4.3.3-r92.jar rmlmapper.jar && \
     cd ..
+RUN cd /KG-Testbed/tools && \
+   wget https://github.com/SDM-TIB/TIB-RDFizer/archive/v0.1.zip && \
+   unzip v0.1.zip && \
+   mv TIB-RDFizer-0.1 rdfizer-master &&  cd rdfizer-master/rdfizer && \
+   pip3 install -r requirements.txt && \
+   cd /KG-Testbed
 
 CMD ["/KG-Testbed/reproduce.sh"]
