@@ -1,5 +1,5 @@
 # Evaluation of relevant parameteres of a Knowledge Graph Construction 
-This repository includes the resources to 
+This repository includes the resources to perform an evaluation over Knowledge Graph Construction Engines (RDFizers) to test how relevant parameters affect to the performance of these tools. 
 
 ## Contents
 Folders:
