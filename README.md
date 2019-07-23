@@ -1,6 +1,16 @@
-# KG-Generation-Testbed
+# Evaluation of relevant parameteres of a Knowledge Graph Construction 
+This repository includes the resources to 
 
-# Contents
-- `data-generator` - contains Jupyter Notebooks that are used to generate the testbed data tables
-- `scripts` - contain shell scripts used to run the experiments
-- `data` - contains sample data (1k rows) for testing. Jupyter Notebooks generate 1k, 3k, 10k, 50k and 100k rows per tables.
+## Contents
+Folders:
+- `data-generator` - contains one Jupyter Notebook for each parameter and the generate_data.py that generates the used data for 1k, 3k, 10k and 50k rows.
+- `data` - Example the sample the generated data for 1k rows
+- `mappings` - The RML mappings used to construct the Knowledge Graphs
+- `results` - The corresponding results of the evaluation.
+
+
+Scripts:
+- `reproduce.sh` - shell script used to run the evaluation over the RMLMapper-java and SDM-RDFizer engines.
+
+
+
